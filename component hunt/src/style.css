@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #131921;
+  color: white;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Search */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: #f3f3f3;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 50px;
+  background: lightblue;
+}
+
+/* Products */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background: #131921;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

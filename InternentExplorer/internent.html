@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Server Architecture</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f2f2f2;
+margin:0;
+padding:0;
+}
+
+header{
+background-color:#34495e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.container{
+padding:30px;
+}
+
+h2{
+color:#2c3e50;
+}
+
+.diagram{
+display:flex;
+justify-content:center;
+align-items:center;
+margin:40px 0;
+}
+
+.box{
+background:white;
+border:2px solid #3498db;
+padding:20px;
+width:200px;
+text-align:center;
+border-radius:10px;
+margin:10px;
+}
+
+.arrow{
+font-size:30px;
+font-weight:bold;
+}
+
+.steps{
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Client - Server Architecture</h1>
+<p>Internet Explorer Assignment</p>
+</header>
+
+<div class="container">
+
+<h2>Client Server Architecture Diagram</h2>
+
+<div class="diagram">
+
+<div class="box">
+<h3>Client</h3>
+<p>User Device<br>Browser (Chrome / Edge)</p>
+</div>
+
+<div class="arrow">➡</div>
+
+<div class="box">
+<h3>Internet</h3>
+<p>Network Connection</p>
+</div>
+
+<div class="arrow">➡</div>
+
+<div class="box">
+<h3>Web Server</h3>
+<p>Stores Website Files</p>
+</div>
+
+</div>
+
+<h2>What Happens When You Open a Website</h2>
+
+<div class="steps">
+
+<ol>
+
+<li>User opens a web browser like Chrome, Edge or Firefox.</li>
+
+<li>User enters a website address (URL) such as www.example.com.</li>
+
+<li>The browser contacts the DNS server to find the website IP address.</li>
+
+<li>DNS server returns the IP address of the requested website.</li>
+
+<li>The browser sends an HTTP request to the web server.</li>
+
+<li>The web server processes the request.</li>
+
+<li>The server sends website files such as HTML, CSS and JavaScript.</li>
+
+<li>The browser renders the files and displays the webpage.</li>
+
+</ol>
+
+</div>
+
+<h2>Conclusion</h2>
+
+<p>
+Client-server architecture is a model where the client requests information and the server provides the response.  
+When a user opens a website, the browser sends a request to the server and the server returns the webpage data which is displayed on the user's screen.
+</p>
+
+</div>
+
+</body>
+</html>

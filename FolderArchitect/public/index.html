@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Folder Architect</title>
+</head>
+<body>
+  <h1>Folder Structure</h1>
+  <ul id="folderList"></ul>
+
+  <script>
+    async function loadFolders() {
+      try {
+        const res = await fetch("http://localhost:3000/folders");
+        const data = await res.json();
+
+        function createList(items) {
+          const ul = document.createElement("ul");
+
+          items.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item.name + " (" + item.type + ")";
+
+            if (item.type === "folder" && item.children) {
+              li.appendChild(createList(item.children));
+            }
+
+            ul.appendChild(li);
+          });
+
+          return ul;
+        }
+
+        document.getElementById("folderList")
+          .appendChild(createList(data));
+
+      } catch (error) {
+        alert("Wait a few seconds and try again.");
+      }
+    }
+
+    loadFolders();
+  </script>
+</body>
+</html>

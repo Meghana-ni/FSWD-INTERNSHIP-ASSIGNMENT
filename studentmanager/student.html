@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Manager</title>
+</head>
+
+<body>
+
+<h1>Student Manager</h1>
+
+<script>
+
+// Array of student objects
+let students = [
+{
+name: "Rahul",
+marks: [80, 75, 90]
+},
+{
+name: "Anita",
+marks: [85, 88, 92]
+},
+{
+name: "Kiran",
+marks: [70, 65, 78]
+}
+];
+
+// Function to calculate average
+function calculateAverage(marks){
+
+let total = 0;
+
+for(let i=0;i<marks.length;i++){
+total += marks[i];
+}
+
+return total / marks.length;
+
+}
+
+// Display student details
+for(let i=0;i<students.length;i++){
+
+let student = students[i];
+
+let avg = calculateAverage(student.marks);
+
+document.write("<h3>Student Name: " + student.name + "</h3>");
+document.write("Marks: " + student.marks + "<br>");
+document.write("Average Marks: " + avg + "<br><br>");
+
+}
+
+</script>
+
+</body>
+</html>
